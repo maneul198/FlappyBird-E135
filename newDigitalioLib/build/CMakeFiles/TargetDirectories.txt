@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/digitalio_dpx.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/newDigitalioLib/build/CMakeFiles/digitalio_dpx_automoc.dir

@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/ID003_LIB_V3.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/ID003_Lib_V3/build/CMakeFiles/ID003_LIB_V3_automoc.dir
