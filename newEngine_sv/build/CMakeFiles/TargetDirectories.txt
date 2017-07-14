@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/enginesv.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/newEngine_sv/build/CMakeFiles/enginesv_automoc.dir

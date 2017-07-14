@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-#define DEBUG
+//#define DEBUG
 #define PROC_EXIT           -1
 
 #define BILL_CMD_POWERUP    200

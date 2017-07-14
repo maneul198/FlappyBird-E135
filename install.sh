@@ -56,6 +56,11 @@ if [ ! -f $HOME/.config/autostart/flappyBird.desktop ];then
 	chown $usuario $HOME/.config/autostart/flappyBird.desktop
 fi
 
+if [ ! -f $HOME/.config/autostart/rotarPantalla.desktop ];then
+	cp ./rotarPantalla.desktop $HOME/.config/autostart/
+	chown $usuario $HOME/.config/autostart/rotarPantalla.desktop
+fi
+
 if [ ! -d $HOME/.config/flappyBird ];then
 	mkdir $HOME/.config/flappyBird
 	chown -R $usuario $HOME/.config/flappyBird
@@ -78,5 +83,7 @@ fi
 if [ ! -f /etc/systemd/system/cambiarPropietarioPines.service ];then
        cp ./cambiarPropietarioPines.service /etc/systemd/system/
 fi       
+
+
 
 systemctl enable cambiarPropietarioPines.service
