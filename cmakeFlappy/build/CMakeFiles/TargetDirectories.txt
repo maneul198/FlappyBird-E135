@@ -1,8 +1,0 @@
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/install/strip.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/install/local.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/smart-vending-flappy-bird.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/rebuild_cache.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/edit_cache.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/install.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/list_install_components.dir
-/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/smart-vending-flappy-bird_automoc.dir

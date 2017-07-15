@@ -408,6 +408,8 @@ void MainWindow::lostLife()
         return;
     }else{
 
+        //overboard->setGameOver(false);
+
         background->enabledLogic = true;
         background->enabledDraw = true;
 
@@ -485,12 +487,14 @@ void MainWindow::gameOver()
     levelboard->enabledLogic= false;
     levelboard->enabledDraw= false;
 
+    level=0;
+    score= 0;
     overboard->setScore(score);
     overboard->enabledLogic = true;
     overboard->enabledDraw = true;
     overboard->setGameOver(true);
     levelboard->setScore(level);
-    scoreboard->setScore(0);
+    scoreboard->setScore(score);
     livesboard->setScore(lives);
 
     status = GAMEOVER;

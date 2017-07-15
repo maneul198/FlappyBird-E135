@@ -43,8 +43,8 @@ void awardPrize::init(){
 
     }
 
-    buttonList.at(0)->setStyleSheet("QPushButton{border-image:url("
-                                    + GameElement::url + "image/products/kinston.jpeg);"
+    buttonList.at(8)->setStyleSheet("QPushButton{border-image:url("
+                                    + GameElement::url + "image/products/gopro.jpg);"
                                     "} QPushButton:focus{margin: 2px 2px 2px 2px;}"
                                     "QPushButton{margin: 15px 15px 15px 15px}");
 
@@ -68,7 +68,11 @@ void awardPrize::resizeEvent(QResizeEvent *){
 }
 
 void awardPrize::enablePrizes(int num){
-    for(int i= 0; i < num && i < 9; i++){
+    for(int i= 0; i < 9; i++){
+        buttonList.at(i)->setEnabled(false);
+    }
+
+    for(int i= 9 - num; i < 9 -num + 3; i++){
         buttonList.at(i)->setEnabled(true);
     }
 }
