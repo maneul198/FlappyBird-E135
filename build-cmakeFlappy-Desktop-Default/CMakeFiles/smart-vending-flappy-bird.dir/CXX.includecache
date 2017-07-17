@@ -203,6 +203,8 @@ QByteArray
 -
 QIODevice
 -
+QDateTime
+-
 
 /home/smart/paqueteFlappyBird/cmakeFlappy/elebackground.cpp
 elebackground.h
@@ -331,6 +333,8 @@ digital_ports.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/main.cpp
 mainwindow.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/mainwindow.h
+awardPrize.h
+/home/smart/paqueteFlappyBird/cmakeFlappy/awardPrize.h
 QApplication
 -
 
@@ -457,6 +461,10 @@ qbytearray.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication
 qcoreapplication.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+qdatetime.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 qdebug.h

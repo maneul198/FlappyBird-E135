@@ -8,8 +8,8 @@ configurationFile::configurationFile(const QString &name, QObject *parent):
 
     open(QIODevice::ReadOnly);
     data= readAll();
-    close();
 
+    close();
 }
 
 QVariant configurationFile::readKey(const QString &key){
@@ -41,4 +41,16 @@ QVariant configurationFile::readKey(const QString &key){
     }
 
     return QVariant(value);
+}
+
+void configurationFile::writeOnFile(QString name, QVariant value){
+    QFile file(name);
+    if(!file.open(QIODevice::Append)){
+        qDebug() << "NOSE PUEDE ENCONTRAR EL ARCHIVO" << endl;
+        return;
+    }
+
+    QTextStream out(&file);
+    out << QDateTime::currentDateTime().toString(Qt::ISODate) << ": $" << value.toString() << "\n";
+    file.close();
 }

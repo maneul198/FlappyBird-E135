@@ -42,6 +42,7 @@ private:
     ProductsManager *manager;
     QList<QPushButton *> buttonList;
     QMessageBox *a;
+    int orden[10]= {0, 8, 1, 9, 2, 3, 4, 5, 6, 7};
 
 signals:
     void selectedPrize();

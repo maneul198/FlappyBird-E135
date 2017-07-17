@@ -6,6 +6,7 @@
 #include <QVariant>
 #include <QByteArray>
 #include <QIODevice>
+#include <QDateTime>
 
 
 class configurationFile : public QFile{
@@ -16,6 +17,7 @@ public:
     double readLifePrice();
     double readInityalVelocity();
     QVariant readKey(const QString &key);
+    static void writeOnFile(QString name, QVariant value);
 
     QByteArray data;
 };
