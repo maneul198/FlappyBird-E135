@@ -1,6 +1,6 @@
 Installer for DirectPCI SDK and Run-time v3.1.1.572_release_linux_x86_64
 Linux Installer v1.1.0.129_devel_linux_x86_64
-Installer started Thu Jul 13 16:33:14 2017
+Installer started Tue Jul 18 19:25:29 2017
 
 INSTALLER ITEM#0
 ITEM STATUS: 6
@@ -14,11 +14,11 @@ ITEM STATUS: 0
 INSTALLER ITEM#3
 
 Detecting Kernel Version:
-   Kernel version 4.10.0-26-generic detected
+   Kernel version 4.10.0-28-generic detected
 uname(2):
-  release: 4.10.0-26-generic
+  release: 4.10.0-28-generic
   sysname: Linux
-  version: #30-Ubuntu SMP Tue Jun 27 09:30:12 UTC 2017
+  version: #32-Ubuntu SMP Fri Jun 30 05:32:18 UTC 2017
   machine: x86_64
   nodename: smart-DPX-E135
 
@@ -37,7 +37,7 @@ Detecting Advantech Innocore DirectPCI hardware:
 ITEM STATUS: 0
 
 INSTALLER ITEM#5: Installing libraries
-Extracting ./usr/lib to /tmp/.iglinstQ0wSMq
+Extracting ./usr/lib to /tmp/.iglinst1bPCFy
 ./usr/lib/
 ./usr/lib/libdpci.so.3.1.1
 ./usr/lib/install.sh
@@ -46,9 +46,9 @@ Extracting ./usr/lib to /tmp/.iglinstQ0wSMq
 ./usr/lib/libdpcidebug.so.3.1.1
 ./usr/lib/libdpcidebug.a
 ./usr/lib/libdpcidebug.so
-+ dirname /tmp/.iglinstQ0wSMq/./usr/lib/install.sh
-+ SHD=/tmp/.iglinstQ0wSMq/./usr/lib
-+ cd /tmp/.iglinstQ0wSMq/./usr/lib
++ dirname /tmp/.iglinst1bPCFy/./usr/lib/install.sh
++ SHD=/tmp/.iglinst1bPCFy/./usr/lib
++ cd /tmp/.iglinst1bPCFy/./usr/lib
 + echo test
 test
 + [ linux_x86_64 = linux_x86_64 ]
@@ -181,7 +181,7 @@ Extracting ./usr/src to /
 ITEM STATUS: 0
 
 INSTALLER ITEM#10: Setting up driver boot scripts
-Extracting ./scripts to /tmp/.iglinstQ0wSMq
+Extracting ./scripts to /tmp/.iglinst1bPCFy
 ./scripts/
 ./scripts/default-directpci
 ./scripts/install_boot.sh
@@ -203,68 +203,66 @@ make[1]: se entra en el directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_
 Building kernel driver dpci_core.ko
 ***********************************
 Compiling and linking kernel driver DEBUG_linux_x86_64/dpci_core.ko
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_module.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_fileops.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_regintr.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_digio.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_idlp.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_ow.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_i2c.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_events.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_boards.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_module.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_fileops.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_regintr.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_digio.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_idlp.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_ow.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_i2c.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_events.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_boards.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.o
   Building modules, stage 2.
   MODPOST 1 modules
 WARNING: modpost: Found 2 section mismatch(es).
 To see full details build your kernel with:
 'make CONFIG_DEBUG_SECTION_MISMATCH=y'
-  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.mod.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.ko
+  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.mod.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.ko
 Compiling and linking kernel driver RELEASE_linux_x86_64/dpci_core.ko
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_module.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_fileops.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_regintr.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_digio.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_idlp.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_ow.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_i2c.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core_events.o
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_boards.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_module.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_fileops.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_regintr.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_digio.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_idlp.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_ow.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_i2c.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core_events.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_boards.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.o
   Building modules, stage 2.
   MODPOST 1 modules
 WARNING: modpost: Found 2 section mismatch(es).
 To see full details build your kernel with:
 'make CONFIG_DEBUG_SECTION_MISMATCH=y'
-  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.mod.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.ko
+  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.mod.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.ko
 make[2]: se entra en el directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core'
 
 ***********************************
 Building kernel driver dpci_core.ko
 ***********************************
 Compiling and linking kernel driver DEBUG_linux_x86_64/dpci_core.ko
-  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.ko
+  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/DEBUG_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.ko
 At main.c:158:
 - SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
 - SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
 sign-file: certs/signing_key.pem: No such file or directory
-  DEPMOD  4.10.0-26-generic
+  DEPMOD  4.10.0-28-generic
 Compiling and linking kernel driver RELEASE_linux_x86_64/dpci_core.ko
-  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-26-generic/dpci_core.ko
+  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/RELEASE_linux_x86_64/obj_dpci_core_4.10.0-28-generic/dpci_core.ko
 At main.c:158:
 - SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
 - SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
 sign-file: certs/signing_key.pem: No such file or directory
-  DEPMOD  4.10.0-26-generic
+  DEPMOD  4.10.0-28-generic
 make[2]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core'
 make[1]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core'
 make: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64'
- * Stopped DirectPCI memory services.
- * Stopped DirectPCI core I/O services.
 Starting DirectPCI services v3.1.1.572:
  *   core I/O driver
-dpci_core 114688 0 - Live 0xffffffffc079b000 (OE)
+dpci_core 114688 0 - Live 0xffffffffc077a000 (OE)
 Success
 ITEM STATUS: 0
 
@@ -280,43 +278,43 @@ make[1]: se entra en el directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_
 Building kernel driver dpci_mem.ko
 ***********************************
 Compiling and linking kernel driver DEBUG_linux_x86_64/dpci_mem.ko
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.mod.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.ko
+  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.mod.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.ko
 Compiling and linking kernel driver RELEASE_linux_x86_64/dpci_mem.ko
-  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.o
+  CC [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.mod.o
-  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.ko
+  CC      /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.mod.o
+  LD [M]  /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.ko
 make[2]: se entra en el directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem'
 
 ***********************************
 Building kernel driver dpci_mem.ko
 ***********************************
 Compiling and linking kernel driver DEBUG_linux_x86_64/dpci_mem.ko
-  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.ko
+  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/DEBUG_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.ko
 At main.c:158:
 - SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
 - SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
 sign-file: certs/signing_key.pem: No such file or directory
-  DEPMOD  4.10.0-26-generic
+  DEPMOD  4.10.0-28-generic
 Compiling and linking kernel driver RELEASE_linux_x86_64/dpci_mem.ko
-  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-26-generic/dpci_mem.ko
+  INSTALL /usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/RELEASE_linux_x86_64/obj_dpci_mem_4.10.0-28-generic/dpci_mem.ko
 At main.c:158:
 - SSL error:02001002:system library:fopen:No such file or directory: bss_file.c:175
 - SSL error:2006D080:BIO routines:BIO_new_file:no such file: bss_file.c:178
 sign-file: certs/signing_key.pem: No such file or directory
-  DEPMOD  4.10.0-26-generic
+  DEPMOD  4.10.0-28-generic
 make[2]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem'
 make[1]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem'
 make: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64'
 Starting DirectPCI services v3.1.1.572:
  *   SRAM & ROM
-dpci_mem 20480 0 - Live 0xffffffffc0657000 (OE)
-dpci_core 114688 1 dpci_mem, Live 0xffffffffc079b000 (OE)
+dpci_mem 20480 0 - Live 0xffffffffc0714000 (OE)
+dpci_core 114688 1 dpci_mem, Live 0xffffffffc077a000 (OE)
 Success
 ITEM STATUS: 0
 

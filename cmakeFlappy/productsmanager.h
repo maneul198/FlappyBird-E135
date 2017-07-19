@@ -69,6 +69,7 @@ public slots:
     
 signals:
     void delivered(Product *product);
+    void deliveredNumberHook(uint hook);
     void started();
     void timeout();
     void stopped();

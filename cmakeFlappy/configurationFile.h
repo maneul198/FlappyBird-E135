@@ -18,6 +18,7 @@ public:
     double readInityalVelocity();
     QVariant readKey(const QString &key);
     static void writeOnFile(QString name, QVariant value);
+    static QVariant readKey(const QString &name, const QString &keyA);
 
     QByteArray data;
 };

@@ -7,25 +7,25 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
-      file(QString("/home/" + qgetenv("USER") + "/.config/flappyBird/config.conf"),  this)
+      settings("/home/" + qgetenv("USER") + "/.config/flappyBird/config.ini", QSettings::IniFormat)
 {
-    priceLife= file.readKey("priceLife").toInt();
-    levelOccilation= file.readKey("levelOccilation").toInt();
-    initialVelocity= file.readKey("initialVelocity").toDouble();
-    increaseVelocity= file.readKey("increaseVelocity").toDouble();
-    numberOfLevelPipes= file.readKey("numberOfLevelPipes").toInt();
-    int intKeyUp= file.readKey("keyUpPin").toInt();
-    int intKeyLeft= file.readKey("keyLeftPin").toInt();
-    int intKeyRight= file.readKey("keyRightPin").toInt();
-    int intKeyBack= file.readKey("keyBackPin").toInt();
-    int intCoinAceptor= file.readKey("coinAceptorPin").toInt();
-    int intProductsManager= file.readKey("productsManagerPin").toInt();
-    double birdUpVelocity= file.readKey("birdUpVelocity").toDouble();
-    double birdDownAceleration= file.readKey("birdDownAceleration").toDouble();
-    int gameLives= file.readKey("gameLives").toInt();
-    int gameLevel= file.readKey("gameLevel").toInt() - 1;
+    priceLife= settings.value("priceLife").toInt();
+    levelOccilation= settings.value("levelOccilation").toInt();
+    initialVelocity= settings.value("initialVelocity").toDouble();
+    increaseVelocity= settings.value("increaseVelocity").toDouble();
+    numberOfLevelPipes= settings.value("numberOfLevelPipes").toInt();
+    int intKeyUp= settings.value("keyUpPin").toInt();
+    int intKeyLeft= settings.value("keyLeftPin").toInt();
+    int intKeyRight= settings.value("keyRightPin").toInt();
+    int intKeyBack= settings.value("keyBackPin").toInt();
+    int intCoinAceptor= settings.value("coinAceptorPin").toInt();
+    int intProductsManager= settings.value("productsManagerPin").toInt();
+    double birdUpVelocity= settings.value("birdUpVelocity").toDouble();
+    double birdDownAceleration= settings.value("birdDownAceleration").toDouble();
+    int gameLives= settings.value("gameLives").toInt();
+    int gameLevel= settings.value("gameLevel").toInt() - 1;
     //gameLevel= 9;
-    int gameScore= file.readKey("gameScore").toInt();
+    int gameScore= settings.value("gameScore").toInt();
 
 
     //setFocusPolicy(Qt::NoFocus);
@@ -68,6 +68,7 @@ MainWindow::MainWindow(QWidget *parent)
                                "QPushButton{margin: 10px 10px 10px 10px}");
 
     prizeButton->setEnabled(false);
+    //prizeButton->setVisible(false);
     connect( prizeButton, SIGNAL(pressed()), this, SLOT(deliverPrize()));
 
     /* Init all the game elements. */
@@ -114,6 +115,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(windowPrize, &awardPrize::selectedPrize, this, [=](){
         //displayInfo();
         prizeButton->setEnabled(false);
+        overboard->mostrarReclamarPremio(false);
+        //prizeButton->setVisible(false);
         level= 0;
         gameTitle();
     });
@@ -122,6 +125,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Game Start.
     level= gameLevel;
     lives= gameLives;
+    if(lives == 0) readyboard->mostrarIngreseDinero(true);
     score= gameScore;
 
     scoreboard->setScore(score);
@@ -154,7 +158,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     billetero= new ID003_Lib_V3();
     connect(billetero, SIGNAL(entroDinero(int)), this, SLOT(coinIn(int)));
-    billetero->abrirPuerto(file.readKey("urlBilletero").toString().toUtf8().data());
+    billetero->abrirPuerto(settings.value("urlBilletero").toString().toUtf8().data());
     billetero->start();
 }
 
@@ -270,6 +274,7 @@ void MainWindow::resizeEvent(QResizeEvent *)
                                    (341.0/512)* height(),
                                    (117.0/288)* width(),
                                    (71.0/512)* height()));
+
     prizeButton->setGeometry(QRect((151.0/288)* width(),
                                    (341.0/512)* height(),
                                    (117.0/288)* width(),
@@ -312,6 +317,7 @@ void MainWindow::gameTitle()
     levelboard->enabledDraw= false;
 
     setButtonVisible(true,true,true);
+
     status = GAMETITLE;
 }
 
@@ -401,14 +407,15 @@ void MainWindow::gamePlay()
 void MainWindow::lostLife()
 {
     --lives;
+
+    overboard->mostrarReclamarPremio(false);
     qDebug() << "LEVEL: " << level << endl;
     if(lives == 0 ){
+        readyboard->mostrarIngreseDinero(true);
         gameOver();
         coinInEnable= true;
         return;
     }else{
-
-        //overboard->setGameOver(false);
 
         background->enabledLogic = true;
         background->enabledDraw = true;
@@ -549,10 +556,12 @@ void MainWindow::coinIn(int dinero){
         lives+= dinero / priceLife;
         qDebug() << lives << endl;
         livesboard->setScore(lives);
+        configurationFile::writeOnFile("/home/" +
+                                       qgetenv("USER") + "/.config/flappyBird/ingresos", "$" + dinero );
+
+        readyboard->mostrarIngreseDinero(false);
     }
 
-    configurationFile::writeOnFile("/home/" +
-                                   qgetenv("USER") + "/.config/flappyBird/ingresos", dinero );
 }
 
 
@@ -604,10 +613,12 @@ void MainWindow::nextLevel(int score){
         levelboard->enabledLogic= false;
         levelboard->enabledDraw= false;
 
-        if(level == 3 || level == 6 || level == 9 || level == 1){
+        if(level == 3 || level == 6 || level == 9 || level == -1){
             prizeButton->setEnabled(true);
+            overboard->mostrarReclamarPremio(true);
         }else{
             prizeButton->setEnabled(false);
+            overboard->mostrarReclamarPremio(false);
         }
 
         status = NEXTLEVEL;
@@ -644,7 +655,7 @@ void MainWindow::setNextLevel(){
 
 void MainWindow::deliverPrize(){
     qDebug() << level << "deliver prize" << endl;
-    if(level == 3 || level == 6 || level == 9 || level == 1 ){
+    if(level == 3 || level == 6 || level == 9 || level == -1 ){
         status= DELIVERPRIZE;
         windowPrize->enablePrizes(level);
 

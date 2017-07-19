@@ -3,15 +3,21 @@
 
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/awardPrize.cpp
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/awardPrize.h
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/product.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/productsmanager.h
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QCoreApplication
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QIODevice
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -30,6 +36,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-l
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
 CMakeFiles/smart-vending-flappy-bird.dir/awardPrize.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
@@ -219,6 +226,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /home/smart/paquet
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/elebackground.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -234,8 +242,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
@@ -248,7 +258,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -265,6 +277,8 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -275,8 +289,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebackground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
@@ -309,6 +325,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /home/smart/paqueteFlapp
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
@@ -363,6 +380,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linu
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elebird.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -409,6 +427,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /home/smart/paqueteFla
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/eleground.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -424,8 +443,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-li
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
@@ -438,7 +459,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-li
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -455,6 +478,8 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-li
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -465,8 +490,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-li
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleground.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
@@ -499,6 +526,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /home/smart/paquete
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTextStream
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
@@ -555,6 +583,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/eleoverboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -602,6 +631,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /home/smart/paqueteFlapp
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -654,6 +684,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linu
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elepipe.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -699,7 +730,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /home/smart/paquet
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/elereadyboard.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -708,14 +741,17 @@ CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_msvc.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
@@ -728,7 +764,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -745,6 +783,8 @@ CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -755,8 +795,11 @@ CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/smart-vending-flappy-bird.dir/elereadyboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
@@ -788,6 +831,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /home/smart/paquet
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/elescoreboard.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -803,8 +847,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
@@ -817,7 +863,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -834,6 +882,8 @@ CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -844,8 +894,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/smart-vending-flappy-bird.dir/elescoreboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
@@ -877,6 +929,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /home/smart/paquet
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/eletitleboard.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
@@ -894,8 +947,10 @@ CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
@@ -908,7 +963,9 @@ CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
@@ -925,6 +982,8 @@ CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
@@ -935,9 +994,11 @@ CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_6
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypetraits.h
+CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/smart-vending-flappy-bird.dir/eletitleboard.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
@@ -973,6 +1034,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QIODevice
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSettings
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
@@ -1028,6 +1090,7 @@ CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
+CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/smart-vending-flappy-bird.dir/gameelement.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h

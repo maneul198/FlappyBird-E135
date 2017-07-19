@@ -180,7 +180,12 @@ int id003_enable(int Handle)
 int id003_enable2(int Handle,char habilitados)
 {
     unsigned char buf[7] = {0xFC,0x07,0xc0,habilitados,0x00,0xff,0x70};
+    unsigned char salida[2];
+    CRCID003(buf,5,salida);
+    buf[5]=salida[0];
+    buf[6]=salida[1];
     return bill_Do_Cmd(Handle,buf,7);
+
 }
 
 int id003_Barkodeinh(int Handle)

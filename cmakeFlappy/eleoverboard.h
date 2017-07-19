@@ -4,6 +4,7 @@
 #include <QTimer>
 #include <QFile>
 #include <QTextStream>
+#include <QTimer>
 #include "gameelement.h"
 
 enum Medal{PLATINICMEDAL = 12,
@@ -25,6 +26,8 @@ private:
     void loadFrame();
     int getHighestScore();
     bool gameOver;
+    bool showReclamarPremio;
+    QTimer *timer;
 
 public:
     explicit EleOverBoard(QObject *parent = 0);
@@ -33,6 +36,7 @@ public:
     void logic();
     void setScore(int);
     void setGameOver(bool);
+    void mostrarReclamarPremio(bool);
 
 signals:
     void buttonVisible(bool,bool,bool);

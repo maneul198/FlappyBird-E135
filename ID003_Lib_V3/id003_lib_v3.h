@@ -6,6 +6,7 @@
 #include <QThread>
 #include <QDebug>
 #include <Idcomm.h>
+#include <QSettings>
 //#include <logs/KbiredUtilities.h>
 
 using namespace std;
@@ -39,6 +40,7 @@ private:
     int Handle;
     char tempstrh[50];
     int denom;
+    char billsEnable;
 };
 
 #endif // ID003_LIB_V3_H

@@ -4,7 +4,14 @@ EleOverBoard::EleOverBoard(QObject *parent) :
     GameElement(parent)
 {
     this->loadFrame();
+    gameOver= false;
+    showReclamarPremio= false;
     this->init();
+    timer= new QTimer();
+    timer->setInterval(1000);
+    connect(timer, &QTimer::timeout, this, [=](){
+        showReclamarPremio= !showReclamarPremio;
+    });
 }
 
 void EleOverBoard::init()
@@ -15,6 +22,7 @@ void EleOverBoard::init()
     this->scoreLabelArrived = false;
     this->overTextRect.setRect(41.0,-588,205.0,55.0);
     this->scoreLabelRect.setRect(25.0,1176,238.0,127.0);
+    this->gameOver= false;
 }
 
 void EleOverBoard::logic()
@@ -42,6 +50,12 @@ void EleOverBoard::draw(QPainter *painter)
 {
     if(!this->enabledDraw)
         return;
+
+    if(showReclamarPremio){
+        painter->drawPixmap(45.0, 60.0, 197.0, 63.0,
+                            this->pixmapList[17]);
+    }
+
 
     painter->drawPixmap(this->overTextRect.x(),
                         this->overTextRect.y(),
@@ -192,4 +206,17 @@ void EleOverBoard::loadFrame()
     this->addFrame(QPixmap(this->url + "image/medals_1.png"));
     this->addFrame(QPixmap(this->url + "image/medals_2.png"));
     this->addFrame(QPixmap(this->url + "image/medals_3.png"));
+    this->addFrame(QPixmap(this->url + "image/puedes_reclamar_premio.png"));
+}
+
+void EleOverBoard::mostrarReclamarPremio(bool b){
+    if(b){
+        timer->start();
+    }
+    else{
+        timer->stop();
+        showReclamarPremio= false;
+    }
+
+
 }

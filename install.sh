@@ -3,7 +3,7 @@
 cd dpci_install_3.1.1.572_release_linux_x86_64
 usuario=$(who -q | grep -v =)
 
-if [ $? == 1 ];then
+if [ $? == 0 ];then
 	./install -q
 	if [ $? != 0 ];then
 		echo "Ocurrio un error al tratar de instalar dpci"
@@ -71,9 +71,9 @@ if [ ! -d $HOME/.config/flappyBird/resource ];then
 	chown -R $usuario $HOME/.config/flappyBird/resource
 fi
 
-if [ ! -f $HOME/.config/flappyBird/config.conf ];then
-	cp -r ./cmakeFlappy/config.conf $HOME/.config/flappyBird
-	chown  $usuario $HOME/.config/flappyBird/config.conf
+if [ ! -f $HOME/.config/flappyBird/config.ini ];then
+	cp -r ./cmakeFlappy/config.ini $HOME/.config/flappyBird
+	chown  $usuario $HOME/.config/flappyBird/config.ini
 fi
 
 if [ ! -f /usr/local/bin/cambiarPropietarioPines.sh ];then
@@ -83,6 +83,8 @@ fi
 if [ ! -f /etc/systemd/system/cambiarPropietarioPines.service ];then
        cp ./cambiarPropietarioPines.service /etc/systemd/system/
 fi       
+
+chown -R $usuario $HOME/.config/flappyBird
 
 
 

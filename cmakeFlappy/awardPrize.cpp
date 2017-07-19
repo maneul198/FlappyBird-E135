@@ -9,6 +9,11 @@ awardPrize::awardPrize(QWidget *parent):
 {
     manager = new ProductsManager();
     connect(manager, SIGNAL(delivered(Product*)), this, SLOT(displayInfo()));
+    connect(manager, &ProductsManager::deliveredNumberHook,this, [=](uint producto){
+        configurationFile::writeOnFile("/home/" + qgetenv("USER") + "/.config/flappyBird/entregasPremios",
+                                        QString("Hook") + producto );
+
+    });
     init();
 }
 

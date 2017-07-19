@@ -6,6 +6,7 @@
 #include <QPainter>
 #include <QPixmap>
 #include <QString>
+#include <QSettings>
 
 class GameElement : public QObject
 {

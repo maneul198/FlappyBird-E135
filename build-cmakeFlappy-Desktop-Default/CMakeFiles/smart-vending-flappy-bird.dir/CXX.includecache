@@ -185,6 +185,8 @@ QMessageBox
 -
 gameelement.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
+configurationFile.h
+/home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.h
 
 /home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.cpp
 configurationFile.h
@@ -247,6 +249,8 @@ QFile
 -
 QTextStream
 -
+QTimer
+-
 gameelement.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 
@@ -271,6 +275,8 @@ elereadyboard.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/elereadyboard.h
 gameelement.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
+QTimer
+-
 
 /home/smart/paqueteFlappyBird/cmakeFlappy/elescoreboard.cpp
 elescoreboard.h
@@ -306,6 +312,8 @@ QPainter
 QPixmap
 -
 QString
+-
+QSettings
 -
 
 /home/smart/paqueteFlappyBird/cmakeFlappy/key.cpp
@@ -389,6 +397,8 @@ eletitleboard.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/eletitleboard.h
 awardPrize.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/awardPrize.h
+QSettings
+-
 configurationFile.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.h
 key.h

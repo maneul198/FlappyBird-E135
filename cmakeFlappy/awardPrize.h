@@ -9,6 +9,7 @@
 #include <QList>
 #include <QMessageBox>
 #include "gameelement.h"
+#include "configurationFile.h"
 
 
 

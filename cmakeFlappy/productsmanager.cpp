@@ -234,6 +234,7 @@ void ProductsManager::sensorChanged(bool value)
         qWarning() << "hook: The sensor was activated by mistake, or maybe was intentional";
 
         emit delivered(&m_none);
+        emit deliveredNumberHook(10);
         stopHook();
     }
 }

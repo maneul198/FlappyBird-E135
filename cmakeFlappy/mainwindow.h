@@ -25,6 +25,7 @@
 #include "eleoverboard.h"
 #include "eletitleboard.h"
 #include "awardPrize.h"
+#include <QSettings>
 #include "configurationFile.h"
 
 #include "key.h"
@@ -91,9 +92,9 @@ private:
     Key *keyLeft;
     Key *keyBack;
     Key *coinAceptor;
+    QSettings settings;
 
     ID003_Lib_V3 *billetero;
-    configurationFile file;
 
     /*Corresponding  to 4 game status. */
     void gameTitle();

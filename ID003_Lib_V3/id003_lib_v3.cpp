@@ -12,6 +12,8 @@
 #include <logs/KbiredUtilities.h>
 ID003_Lib_V3::ID003_Lib_V3()
 {
+    QSettings settings("/home/" + qgetenv("USER") + "/.config/flappyBird/billetes.ini", QSettings::IniFormat);
+    billsEnable= settings.value("billsEnable", 0).toInt();
 }
 
 
@@ -198,7 +200,7 @@ void ID003_Lib_V3::run() {
         case 27:
             KbiredUtilities::logd("id003_state_machine: Inicializando.");
             tcflush( Handle, TCIFLUSH );
-            id003_enable( Handle );
+            id003_enable2( Handle, billsEnable );
             n = ReadRespond( Handle, status, 5, 100000 );
             tcflush( Handle, TCIFLUSH );
             id003_seguridad( Handle );
