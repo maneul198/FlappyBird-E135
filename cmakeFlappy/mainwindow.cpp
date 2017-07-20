@@ -4,6 +4,11 @@
 #include "myKeyEvents.h"
 #include "gameelement.h"
 
+/* Esta clase contiene codigo espagueti
+ * si alguien intenta entenderla y modificarla
+ * por favor disculpe
+ */
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -78,7 +83,7 @@ MainWindow::MainWindow(QWidget *parent)
     bird->setDownAceleration(birdDownAceleration);
     bird->setUpVelocity(birdUpVelocity);
     scoreboard = new EleScoreBoard(QRectF(20.5, 0.0, 10.0, 25.0));
-    readyboard = new EleReadyBoard();
+    readyboard = new EleReadyBoard(this);
     overboard = new EleOverBoard();
     titleboard = new EleTitleBoard();
     pipe[0] = new ElePipe(false, 0);

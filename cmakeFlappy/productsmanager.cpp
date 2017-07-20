@@ -5,6 +5,7 @@ ProductsManager::ProductsManager(QObject *parent) :
 {
     m_engineHook = new EngineSV(0, this);
 
+
 #ifdef GPIO
     m_sensor = new GPIO(sensorGPIO.toString().toStdString());
     m_sensor->export_gpio();
@@ -156,6 +157,13 @@ void ProductsManager::turnHook(uint hook)
         return;
     }
 
+    qDebug() << "EL PRODUCTO ES: " << m_products.at(hook)->name() << endl;
+    if(m_products.at(hook)->count() == 0){
+        qWarning() << "hook:" << "no products" << endl;
+        emit noProduct();
+        return;
+    }
+
     // restart the counter of the max number of intents
     m_turnOnCounter = 3;
     m_currentHook = hook;
@@ -176,15 +184,15 @@ void ProductsManager::turnHook(uint hook)
 void ProductsManager::turnHook()
 {
     qDebug() << m_turnOnCounter << "COUNTER" << endl;
-    if (m_delivered) {
+    if (m_delivered && false) {
         m_products.at(m_currentHook)->decreaseCount();
         emit delivered(m_products.at(m_currentHook));
         setBusy(false);
     } else {
         if (m_turnOnCounter == 0) {
             //stopHook();
+            emit timeout(m_currentHook);
             return;
-            //emit timeout();
 
         } else {
             --m_turnOnCounter;
@@ -232,10 +240,10 @@ void ProductsManager::sensorChanged(bool value)
         stopHook();
     } else {
         qWarning() << "hook: The sensor was activated by mistake, or maybe was intentional";
-
         emit delivered(&m_none);
-        emit deliveredNumberHook(10);
+        emit deliveredNumberHook(m_currentHook);
         stopHook();
+        m_products.at(m_currentHook)->decreaseCount();
     }
 }
 
@@ -257,6 +265,10 @@ void ProductsManager::unselectHooks()
         return;
 
     m_engineHook->turnOffLights();
+}
+
+void ProductsManager::addProduct(Product *product){
+    m_products.append(product);
 }
 
 // kate: indent-mode cstyle; indent-width 4; replace-tabs on;

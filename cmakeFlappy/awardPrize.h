@@ -10,7 +10,8 @@
 #include <QMessageBox>
 #include "gameelement.h"
 #include "configurationFile.h"
-
+#include <sstream>
+#include "product.h"
 
 
 enum Products{PRODUCTO_1,
@@ -43,7 +44,9 @@ private:
     ProductsManager *manager;
     QList<QPushButton *> buttonList;
     QMessageBox *a;
+    void loadProducs();
     int orden[10]= {0, 8, 1, 9, 2, 3, 4, 5, 6, 7};
+    QSettings setting;
 
 signals:
     void selectedPrize();

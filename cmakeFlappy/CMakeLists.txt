@@ -18,6 +18,8 @@ find_package( Qt5  ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 
 find_library(libdigitalio_dpx.so NAMES digitalio PATHS "/usr/local/lib/")
 
+set(CMAKE_BUILD_TYPE "Debug")
+
 set(SRCS
     main.cpp
     mainwindow.cpp

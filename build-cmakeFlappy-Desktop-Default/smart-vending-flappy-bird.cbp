@@ -45,7 +45,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add option="-DQT_NO_DEBUG"/>
 					<Add option="-DQT_QUICKWIDGETS_LIB"/>
 					<Add option="-DQT_QUICK_LIB"/>
 					<Add option="-DQT_QML_LIB"/>
@@ -89,7 +88,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add option="-DQT_NO_DEBUG"/>
 					<Add option="-DQT_QUICKWIDGETS_LIB"/>
 					<Add option="-DQT_QUICK_LIB"/>
 					<Add option="-DQT_QML_LIB"/>

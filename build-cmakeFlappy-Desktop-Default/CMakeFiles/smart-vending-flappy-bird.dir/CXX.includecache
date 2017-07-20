@@ -187,6 +187,10 @@ gameelement.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/gameelement.h
 configurationFile.h
 /home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.h
+sstream
+-
+product.h
+/home/smart/paqueteFlappyBird/cmakeFlappy/product.h
 
 /home/smart/paqueteFlappyBird/cmakeFlappy/configurationFile.cpp
 configurationFile.h

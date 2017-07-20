@@ -41,6 +41,13 @@ public:
     static int countProducts(QQmlListProperty<Product> *p);
     static Product *atProducts(QQmlListProperty<Product> *p, int index);
     static void clearProducts(QQmlListProperty<Product> *p);
+
+
+    //En vista de que el sesarrollador Smith planeava usar esta clase
+    // dentro de QML se crean metodos analogos pero para usar directamete
+    // en c++ ya que este proyecto no usa QML
+
+    void addProduct(Product *);
     
     Product *product(int index);
     
@@ -61,7 +68,7 @@ public:
     void setSpinTime(int spinTime);
     
     int countHooks() const;
-    
+
 public slots:
     Q_INVOKABLE void turnHook(uint hook);
     Q_INVOKABLE void selectHook(uint hook);
@@ -71,7 +78,8 @@ signals:
     void delivered(Product *product);
     void deliveredNumberHook(uint hook);
     void started();
-    void timeout();
+    void timeout(uint hook);
+    void noProduct();
     void stopped();
     
     void productsChanged();
