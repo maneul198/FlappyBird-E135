@@ -55,7 +55,7 @@ include CMakeFiles/smart-vending-flappy-bird_automoc.dir/progress.make
 
 CMakeFiles/smart-vending-flappy-bird_automoc:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic moc for target smart-vending-flappy-bird"
-	/usr/bin/cmake -E cmake_autogen /home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/smart-vending-flappy-bird_automoc.dir/ ""
+	/usr/bin/cmake -E cmake_autogen /home/smart/paqueteFlappyBird/cmakeFlappy/build/CMakeFiles/smart-vending-flappy-bird_automoc.dir/ Debug
 
 smart-vending-flappy-bird_automoc: CMakeFiles/smart-vending-flappy-bird_automoc
 smart-vending-flappy-bird_automoc: CMakeFiles/smart-vending-flappy-bird_automoc.dir/build.make

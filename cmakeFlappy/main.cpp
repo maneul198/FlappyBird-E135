@@ -7,8 +7,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-   //MainWindow w(0);
-   awardPrize w;
+   MainWindow w(0);
+   //awardPrize w;
 
 #ifdef DEBUG
     w.show();

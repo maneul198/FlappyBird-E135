@@ -1,17 +1,45 @@
 #! /bin/bash
 
-cd dpci_install_3.1.1.572_release_linux_x86_64
-usuario=$(who -q | grep -v =)
+if [ "$1" = "clear" ];then
+	rm $HOME/.config/autostart/flappyBird.desktop
+	rm $HOME/.config/autostart/rotarPantalla.desktop
+	rm -r $HOME/.config/flappyBirdConfig
+	systemctl disable cambiarPropietarioPines.service
+	rm /usr/local/bin/cambiarPropietarioPines.sh
+	rm /usr/local/bin/smart-vending-flappy-bird
+	rm /etc/systemd/system/cambiarPropietarioPines.service
 
-if [ $? == 0 ];then
-	./install -q
-	if [ $? != 0 ];then
-		echo "Ocurrio un error al tratar de instalar dpci"
+	if [ "$2" = "--all" ];then
+		rm -r */build
+		echo "Se han eliminado todos los archivos de configuracion y los binarios"
+		exit 0
 	fi
-else
-	echo "Error: No existe el directorio dpci"
+	echo "Se han eliminado todos los archivos de configuracion"
+
+	exit 0
+
 fi
+
+usuario=$(who -q | grep -v =)
+cd dpci_install_3.1.1.572_release_linux_x86_64
+
+if [ "$1" = "all" ];then
+
+	if [ $? == 0 ];then
+		./install -q
+		if [ $? != 0 ];then
+			echo "Ocurrio un error al tratar de instalar dpci"
+		else
+			echo "Se ha instalado DPCI"
+		fi
+	else
+		echo "Error: No existe el directorio dpci"
+	fi
+
+fi
+
 cd ..
+
 
 instalar_libreria(){
 	cd $1
@@ -61,31 +89,19 @@ if [ ! -f $HOME/.config/autostart/rotarPantalla.desktop ];then
 	chown $usuario $HOME/.config/autostart/rotarPantalla.desktop
 fi
 
-if [ ! -d $HOME/.config/flappyBird ];then
-	mkdir $HOME/.config/flappyBird
-	chown -R $usuario $HOME/.config/flappyBird
-fi
-
-if [ ! -d $HOME/.config/flappyBird/resource ];then
-	cp -r ./cmakeFlappy/resource $HOME/.config/flappyBird
-	chown -R $usuario $HOME/.config/flappyBird/resource
-fi
-
-if [ ! -f $HOME/.config/flappyBird/config.ini ];then
-	cp -r ./cmakeFlappy/config.ini $HOME/.config/flappyBird
-	chown  $usuario $HOME/.config/flappyBird/config.ini
+if [ ! -d $HOME/.config/flappyBirdConfig ];then
+	cp -r ./cmakeFlappy/flappyBirdConfig $HOME/.config/
+	chown -R $usuario $HOME/.config/flappyBirdConfig
 fi
 
 if [ ! -f /usr/local/bin/cambiarPropietarioPines.sh ];then
 	cp ./cambiarPropietarioPines.sh /usr/local/bin/
+	chown $usuario /usr/local/bin/cambiarPropietarioPines.sh
 fi
 
 if [ ! -f /etc/systemd/system/cambiarPropietarioPines.service ];then
        cp ./cambiarPropietarioPines.service /etc/systemd/system/
+       chown $usuario /etc/systemd/system/cambiarPropietarioPines.service
 fi       
-
-chown -R $usuario $HOME/.config/flappyBird
-
-
 
 systemctl enable cambiarPropietarioPines.service

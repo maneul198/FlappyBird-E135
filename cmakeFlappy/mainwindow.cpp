@@ -12,7 +12,7 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
-      settings("/home/" + qgetenv("USER") + "/.config/flappyBird/config.ini", QSettings::IniFormat)
+      settings("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/config.ini", QSettings::IniFormat)
 {
     priceLife= settings.value("priceLife").toInt();
     levelOccilation= settings.value("levelOccilation").toInt();
@@ -562,7 +562,7 @@ void MainWindow::coinIn(int dinero){
         qDebug() << lives << endl;
         livesboard->setScore(lives);
         configurationFile::writeOnFile("/home/" +
-                                       qgetenv("USER") + "/.config/flappyBird/ingresos", "$" + dinero );
+                                       qgetenv("USER") + "/.config/flappyBirdConfig/ingresos", "$" + dinero );
 
         readyboard->mostrarIngreseDinero(false);
     }

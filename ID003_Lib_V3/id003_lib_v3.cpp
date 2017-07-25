@@ -12,7 +12,7 @@
 #include <logs/KbiredUtilities.h>
 ID003_Lib_V3::ID003_Lib_V3()
 {
-    QSettings settings("/home/" + qgetenv("USER") + "/.config/flappyBird/billetes.ini", QSettings::IniFormat);
+    QSettings settings("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/billetes.ini", QSettings::IniFormat);
     billsEnable= settings.value("billsEnable", 0).toInt();
 }
 

@@ -29,6 +29,6 @@ QRectF& GameElement::getBindRect()
     return this->bindRect;
 }
 
-QSettings setting("/home/" + qgetenv("USER") + "/.config/flappyBird/config.ini", QSettings::IniFormat);
+QSettings setting("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/config.ini", QSettings::IniFormat);
 
 const QString GameElement::url= setting.value("urlRecursos").toString();

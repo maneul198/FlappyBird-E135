@@ -1,6 +1,6 @@
 Installer for DirectPCI SDK and Run-time v3.1.1.572_release_linux_x86_64
 Linux Installer v1.1.0.129_devel_linux_x86_64
-Installer started Tue Jul 18 19:25:29 2017
+Installer started Fri Jul 21 15:59:15 2017
 
 INSTALLER ITEM#0
 ITEM STATUS: 6
@@ -37,7 +37,7 @@ Detecting Advantech Innocore DirectPCI hardware:
 ITEM STATUS: 0
 
 INSTALLER ITEM#5: Installing libraries
-Extracting ./usr/lib to /tmp/.iglinst1bPCFy
+Extracting ./usr/lib to /tmp/.iglinstXxlEY2
 ./usr/lib/
 ./usr/lib/libdpci.so.3.1.1
 ./usr/lib/install.sh
@@ -46,9 +46,9 @@ Extracting ./usr/lib to /tmp/.iglinst1bPCFy
 ./usr/lib/libdpcidebug.so.3.1.1
 ./usr/lib/libdpcidebug.a
 ./usr/lib/libdpcidebug.so
-+ dirname /tmp/.iglinst1bPCFy/./usr/lib/install.sh
-+ SHD=/tmp/.iglinst1bPCFy/./usr/lib
-+ cd /tmp/.iglinst1bPCFy/./usr/lib
++ dirname /tmp/.iglinstXxlEY2/./usr/lib/install.sh
++ SHD=/tmp/.iglinstXxlEY2/./usr/lib
++ cd /tmp/.iglinstXxlEY2/./usr/lib
 + echo test
 test
 + [ linux_x86_64 = linux_x86_64 ]
@@ -181,7 +181,7 @@ Extracting ./usr/src to /
 ITEM STATUS: 0
 
 INSTALLER ITEM#10: Setting up driver boot scripts
-Extracting ./scripts to /tmp/.iglinst1bPCFy
+Extracting ./scripts to /tmp/.iglinstXxlEY2
 ./scripts/
 ./scripts/default-directpci
 ./scripts/install_boot.sh
@@ -260,9 +260,11 @@ sign-file: certs/signing_key.pem: No such file or directory
 make[2]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core'
 make[1]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core'
 make: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64'
+ * Stopped DirectPCI memory services.
+ * Stopped DirectPCI core I/O services.
 Starting DirectPCI services v3.1.1.572:
  *   core I/O driver
-dpci_core 114688 0 - Live 0xffffffffc077a000 (OE)
+dpci_core 114688 0 - Live 0xffffffffc0b95000 (OE)
 Success
 ITEM STATUS: 0
 
@@ -313,8 +315,8 @@ make[1]: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_rel
 make: se sale del directorio '/usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64'
 Starting DirectPCI services v3.1.1.572:
  *   SRAM & ROM
-dpci_mem 20480 0 - Live 0xffffffffc0714000 (OE)
-dpci_core 114688 1 dpci_mem, Live 0xffffffffc077a000 (OE)
+dpci_mem 20480 0 - Live 0xffffffffc05a6000 (OE)
+dpci_core 114688 1 dpci_mem, Live 0xffffffffc0b95000 (OE)
 Success
 ITEM STATUS: 0
 

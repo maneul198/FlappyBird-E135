@@ -12,6 +12,7 @@
 #include "configurationFile.h"
 #include <sstream>
 #include "product.h"
+#include <QSettings>
 
 
 enum Products{PRODUCTO_1,
