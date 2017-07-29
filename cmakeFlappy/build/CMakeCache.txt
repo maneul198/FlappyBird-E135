@@ -192,9 +192,6 @@ Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
-//Path to a library.
-libdigitalio_dpx.so:FILEPATH=libdigitalio_dpx.so-NOTFOUND
-
 //Value Computed by CMake
 smart-vending-flappy-bird_BINARY_DIR:STATIC=/home/smart/paqueteFlappyBird/cmakeFlappy/build
 

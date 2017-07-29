@@ -5,6 +5,7 @@ EleOverBoard::EleOverBoard(QObject *parent) :
 {
     this->loadFrame();
     gameOver= false;
+    lostLife= false;
     showReclamarPremio= false;
     this->init();
     timer= new QTimer();
@@ -57,11 +58,20 @@ void EleOverBoard::draw(QPainter *painter)
     }
 
 
-    painter->drawPixmap(this->overTextRect.x(),
-                        this->overTextRect.y(),
-                        this->overTextRect.width(),
-                        this->overTextRect.height(),
-                        this->pixmapList[gameOver ? 10 : 11]);
+    if(gameOver){
+        painter->drawPixmap(this->overTextRect.x(),
+                            this->overTextRect.y(),
+                            this->overTextRect.width(),
+                            this->overTextRect.height(),
+                            this->pixmapList[10]);
+    }else{
+        painter->drawPixmap(this->overTextRect.x(),
+                            this->overTextRect.y(),
+                            this->overTextRect.width(),
+                            this->overTextRect.height(),
+                            this->pixmapList[lostLife ? 18 : 11]);
+    }
+
 
     painter->drawPixmap(this->scoreLabelRect.x(),
                         this->scoreLabelRect.y(),
@@ -145,6 +155,10 @@ void EleOverBoard::setGameOver(bool status)
     gameOver= status;
 }
 
+void EleOverBoard::setLostLife(bool status){
+    lostLife= status;
+}
+
 int EleOverBoard::getHighestScore()
 {
     int highestScore;
@@ -207,6 +221,7 @@ void EleOverBoard::loadFrame()
     this->addFrame(QPixmap(this->url + "image/medals_2.png"));
     this->addFrame(QPixmap(this->url + "image/medals_3.png"));
     this->addFrame(QPixmap(this->url + "image/puedes_reclamar_premio.png"));
+    this->addFrame(QPixmap(this->url + "image/pierde_vida.png"));
 }
 
 void EleOverBoard::mostrarReclamarPremio(bool b){

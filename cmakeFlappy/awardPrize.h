@@ -48,6 +48,7 @@ private:
     void loadProducs();
     int orden[10]= {0, 8, 1, 9, 2, 3, 4, 5, 6, 7};
     QSettings setting;
+    bool active;
 
 signals:
     void selectedPrize();

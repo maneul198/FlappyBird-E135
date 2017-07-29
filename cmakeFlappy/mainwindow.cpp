@@ -28,8 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     double birdUpVelocity= settings.value("birdUpVelocity").toDouble();
     double birdDownAceleration= settings.value("birdDownAceleration").toDouble();
     int gameLives= settings.value("gameLives").toInt();
-    int gameLevel= settings.value("gameLevel").toInt() - 1;
-    //gameLevel= 9;
+    int gameLevel= settings.value("gameLevel").toInt();
     int gameScore= settings.value("gameScore").toInt();
 
 
@@ -93,6 +92,10 @@ MainWindow::MainWindow(QWidget *parent)
     pipe[1]->setOccilation(false);
     pipe[2]->setOccilation(false);
 
+    pipe[0]->setSpeedX(initialVelocity);
+    pipe[1]->setSpeedX(initialVelocity);
+    pipe[2]->setSpeedX(initialVelocity);
+
     livesboard= new EleScoreBoard(QRectF(131.5, 0.0, 25.0, 45.0));
     levelboard= new EleScoreBoard(QRectF(242.5, 0.0, 25.0, 45.0));
 
@@ -122,13 +125,17 @@ MainWindow::MainWindow(QWidget *parent)
         prizeButton->setEnabled(false);
         overboard->mostrarReclamarPremio(false);
         //prizeButton->setVisible(false);
-        level= 0;
-        gameTitle();
+        level= 1;
+        //gameTitle();
+        //gameReady();
+        gameOver();
+        //gameReady();
     });
 
 
     // Game Start.
     level= gameLevel;
+    //level= 3;
     lives= gameLives;
     if(lives == 0) readyboard->mostrarIngreseDinero(true);
     score= gameScore;
@@ -137,7 +144,8 @@ MainWindow::MainWindow(QWidget *parent)
     livesboard->setScore(lives);
     levelboard->setScore(level);
 
-    gameTitle();
+    //gameTitle();
+    gameReady();
 
     keyUp= new Key(intKeyUp, 100, this);
     keyRight= new Key(intKeyRight, 100, this);
@@ -165,6 +173,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(billetero, SIGNAL(entroDinero(int)), this, SLOT(coinIn(int)));
     billetero->abrirPuerto(settings.value("urlBilletero").toString().toUtf8().data());
     billetero->start();
+
 }
 
 MainWindow::~MainWindow()
@@ -252,7 +261,6 @@ void MainWindow::paintEvent(QPaintEvent *)
     {
         /* update the impact rectangle of bird. */
         impactBirdRect.moveCenter( bird->getBindRect().center());
-
         /* To test if the impact happened. */
         if(impactBirdRect.intersects( ground->getBindRect()))
         {
@@ -290,7 +298,6 @@ void MainWindow::gameTitle()
 {
     background->enabledLogic = true;
     background->enabledDraw = true;
-
     titleboard->enabledLogic = true;
     titleboard->enabledDraw = true;
 
@@ -302,11 +309,11 @@ void MainWindow::gameTitle()
 
     overboard->enabledLogic = false;
     overboard->enabledDraw = false;
-
     pipe[0]->enabledLogic = false;
     pipe[0]->enabledDraw = false;
     pipe[1]->enabledLogic = false;
     pipe[1]->enabledDraw = false;
+    readyboard->enabledDraw = false;
     pipe[2]->enabledLogic = false;
     pipe[2]->enabledDraw = false;
     readyboard->enabledLogic = false;
@@ -324,11 +331,20 @@ void MainWindow::gameTitle()
     setButtonVisible(true,true,true);
 
     status = GAMETITLE;
+    //startButton->setFocus();
+
+    QTimer::singleShot(2000, this, [=](){
+        startButton->pressed();
+    });
+
+    //MACHETASO
+    //gameReady();
 }
 
 void MainWindow::gameReady()
 {
 
+    readyboard->enabledDraw = false;
     background->enabledLogic = true;
     background->enabledDraw = true;
 
@@ -354,7 +370,6 @@ void MainWindow::gameReady()
     readyboard->enabledLogic = true;
     readyboard->enabledDraw = true;
 
-    scoreboard->enabledLogic = true;
     scoreboard->enabledDraw = true;
 
     livesboard->enabledLogic = true;
@@ -365,7 +380,7 @@ void MainWindow::gameReady()
     levelboard->enabledDraw= true;
 
 
-    setButtonVisible(false,false,false);
+    setButtonVisible(true,true,false);
     status = GAMEREADY;
 }
 
@@ -383,6 +398,7 @@ void MainWindow::gamePlay()
     ground->enabledLogic = true;
     ground->enabledDraw = true;
 
+    readyboard->enabledDraw = false;
     overboard->enabledLogic = false;
     overboard->enabledDraw = false;
 
@@ -405,6 +421,9 @@ void MainWindow::gamePlay()
     levelboard->enabledLogic= true;
     levelboard->enabledDraw= true;
     coinInEnable= false;
+    coinInEnable= true;
+
+    setButtonVisible(false, false, false);
 
     status = GAMEPLAY;
 }
@@ -422,6 +441,7 @@ void MainWindow::lostLife()
         return;
     }else{
 
+        overboard->setLostLife(true);
         background->enabledLogic = true;
         background->enabledDraw = true;
 
@@ -595,6 +615,7 @@ void MainWindow::nextLevel(int score){
         ground->enabledDraw = true;
 
         overboard->setScore(score);
+        overboard->setLostLife(false);
         levelboard->setScore(level);
         overboard->enabledLogic = true;
         overboard->enabledDraw = true;

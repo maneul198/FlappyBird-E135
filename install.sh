@@ -5,9 +5,13 @@ if [ "$1" = "clear" ];then
 	rm $HOME/.config/autostart/rotarPantalla.desktop
 	rm -r $HOME/.config/flappyBirdConfig
 	systemctl disable cambiarPropietarioPines.service
+	systemctl disable powerOff-E135.service
 	rm /usr/local/bin/cambiarPropietarioPines.sh
 	rm /usr/local/bin/smart-vending-flappy-bird
+	rm /usr/local/bin/powerOff-E135.service
 	rm /etc/systemd/system/cambiarPropietarioPines.service
+	rm /etc/systemd/system/powerOff-E135.service
+	
 
 	if [ "$2" = "--all" ];then
 		rm -r */build
@@ -78,6 +82,7 @@ instalar_libreria newDigitalioLib
 instalar_libreria newEngine_sv
 instalar_libreria ID003_Lib_V3
 instalar_libreria cmakeFlappy
+instalar_libreria powerOff
 
 if [ ! -f $HOME/.config/autostart/flappyBird.desktop ];then
 	cp ./flappyBird.desktop $HOME/.config/autostart/
@@ -104,4 +109,11 @@ if [ ! -f /etc/systemd/system/cambiarPropietarioPines.service ];then
        chown $usuario /etc/systemd/system/cambiarPropietarioPines.service
 fi       
 
+if [ ! -f /etc/systemd/system/powerOff-E135.service ];then
+       cp ./powerOff-E135.service /etc/systemd/system/
+       chown $usuario /etc/systemd/system/powerOff-E135.service
+       chown $usuario /usr/local/bin/powerOff-E135
+fi       
+
 systemctl enable cambiarPropietarioPines.service
+systemctl enable powerOff-E135.service

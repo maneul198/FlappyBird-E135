@@ -16,7 +16,6 @@ find_package( Qt5  ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core QuickWidgets Multimedia
 )
 
-find_library(libdigitalio_dpx.so NAMES digitalio PATHS "/usr/local/lib/")
 
 set(CMAKE_BUILD_TYPE "Debug")
 
@@ -64,11 +63,9 @@ target_link_libraries(${PROJECT_NAME}
     Qt5::Core
     Qt5::QuickWidgets
     Qt5::Multimedia
-    #digitalio
     "/usr/local/lib/libdigitalio_dpx.so"
     "/usr/local/lib/libenginesv.so"
     "/usr/local/lib/libID003_LIB_V3.so"
-    #"/home/smart/Documentos/qt_project/build-ID003_Lib_V3-Desktop-Debug/libID003_Lib_V3.so"
 )
 
 install( TARGETS ${PROJECT_NAME}  RUNTIME DESTINATION "bin" )

@@ -8,6 +8,7 @@ awardPrize::awardPrize(QWidget *parent):
     QMainWindow(parent),
     setting("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/productos.ini", QSettings::IniFormat)
 {
+    active= false;
     manager = new ProductsManager();
     loadProducs();
     connect(manager, SIGNAL(delivered(Product*)), this, SLOT(displayInfo()));
@@ -20,6 +21,8 @@ awardPrize::awardPrize(QWidget *parent):
         //oss << producto;
         configurationFile::writeOnFile("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/entregasPremios",
                                          oss.str().c_str()  );
+
+        emit selectedPrize();
 
     });
 
@@ -39,7 +42,7 @@ awardPrize::awardPrize(QWidget *parent):
 
 void awardPrize::init(){
     resize(540, 760);
-    setStyleSheet("background-image: url(" + GameElement::url + "/image/bg_day.png)");
+    setStyleSheet("background-image: url(" + GameElement::url + "/image/fondo_productos.png)");
     double BUTTON_WIDTH = width() / 3;
     double BUTTON_HEIGH = height() / 4;
     double HORIZONTAL_BUTTON_SEPARATION = BUTTON_WIDTH / 3;
@@ -52,18 +55,18 @@ void awardPrize::init(){
                               + GameElement::url + "image/products/goproCamer.jpg);"
                                                    "} QPushButton:focus{margin: 2px 2px 2px 2px;}"
                                                    "QPushButton{margin: 15px 15px 15px 15px}");
-                                                   */
+                             */
 
         button->setGeometry(QRect(BUTTON_WIDTH * (i % 2) + HORIZONTAL_BUTTON_SEPARATION * ((i % 2) + 1),
-            BUTTON_HEIGH * (i / 2)  + VERTICAL_BUTTON_SEPARATION * ((i / 2)),
-            BUTTON_WIDTH, BUTTON_HEIGH));
+                                  BUTTON_HEIGH * (i / 2)  + VERTICAL_BUTTON_SEPARATION * ((i / 2)),
+                                  BUTTON_WIDTH, BUTTON_HEIGH));
 
         //button->setEnabled(false);
         buttonList.append(button);
 
         connect(button, &QPushButton::pressed, this, [=](){
             manager->turnHook(orden[i]);
-            emit selectedPrize();
+            //emit selectedPrize();
         });
     }
 
@@ -94,7 +97,7 @@ void awardPrize::init(){
         connect(button, &QPushButton::pressed, this, [=](){
             manager->turnHook(orden[4 + i]);
             //close();
-            emit selectedPrize();
+            //emit selectedPrize();
         });
 
     }
@@ -112,14 +115,17 @@ void awardPrize::init(){
     }
 }
 
+/*
 void awardPrize::resizeEvent(QResizeEvent *){
     setStyleSheet("background-image: url(" + GameElement::url + "/image/bg_day.png)");
 
+    double a= buttonList.at(0)->size().height();
+
     for(int i= 0; i < 4; i++){
         QPushButton * button = buttonList.at(i);
-
+s
         button->setGeometry(QRect(button->size().width() * (i % 2) + ((width() - button->size().width() * 2) / 3) * ((i % 2) + 1),
-                                  button->size().height() * (i / 2)  + (button->size().height() / 5) * ((i / 2)),
+                                  button->size().height() * (i / 2)  + (button->size().height() / 2 ) * ((i / 2)),
                                   button->size().width(), button->size().height()));
     }
 
@@ -129,9 +135,47 @@ void awardPrize::resizeEvent(QResizeEvent *){
 
 
         button->setGeometry(QRect(button->size().width() * (i % 3) + ((width() - button->size().width() * 3) / 4) * ((i % 3) + 1),
-                                  button->size().height() * ( 3 + i / 3)  + (button->size().height() / 5) * ((i / 3)),
+                                  button->size().height() * ( 3 + i / 3)  + ( a * 1 ) * ((i / 3) + 1),
                                   button->size().width(), button->size().height()));
     }
+}
+*/
+
+void awardPrize::resizeEvent(QResizeEvent *){
+    setStyleSheet("background-image: url(" + GameElement::url + "/image/fondo_productos.png)");
+    double BUTTON_WIDTH = width() / 3;
+    double BUTTON_HEIGH = height() / 4;
+    double HORIZONTAL_BUTTON_SEPARATION = BUTTON_WIDTH / 3;
+    double VERTICAL_BUTTON_SEPARATION = BUTTON_HEIGH / 5;
+
+    for(int i= 0; i < 4; i++){
+        QPushButton * button = buttonList.at(i);
+
+        button->setGeometry(QRect(BUTTON_WIDTH * (i % 2) + HORIZONTAL_BUTTON_SEPARATION * ((i % 2) + 1),
+            BUTTON_HEIGH * (i / 2)  + VERTICAL_BUTTON_SEPARATION * ((i / 2)),
+            BUTTON_WIDTH, BUTTON_HEIGH));
+
+    }
+
+    BUTTON_WIDTH = width() / 4;
+    BUTTON_HEIGH = BUTTON_WIDTH;
+    HORIZONTAL_BUTTON_SEPARATION = BUTTON_WIDTH / 4;
+    VERTICAL_BUTTON_SEPARATION = BUTTON_HEIGH / 4;
+
+    for(int i= 0; i < 3; i++){
+        QPushButton * button = buttonList.at(4 + i);
+        button->setGeometry(QRect(BUTTON_WIDTH * (i % 3) + HORIZONTAL_BUTTON_SEPARATION * ((i % 3) + 1),
+                                  BUTTON_HEIGH * ( 3 + i / 3)  + 300,
+                                  BUTTON_WIDTH, BUTTON_HEIGH));
+    }
+
+    for(int i= 3; i < 6; i++){
+        QPushButton * button = buttonList.at(4 + i);
+        button->setGeometry(QRect(BUTTON_WIDTH * (i % 3) + HORIZONTAL_BUTTON_SEPARATION * ((i % 3) + 1),
+                                  BUTTON_HEIGH * ( 3 + i / 3)  + 400,
+                                  BUTTON_WIDTH, BUTTON_HEIGH));
+    }
+
 }
 
 void awardPrize::enablePrizes(int num){
@@ -165,15 +209,18 @@ ProductsManager *awardPrize::getManager()
 
 void awardPrize::displayInfo()
 {
+    if(active || !this->isVisible()) return;
     //soundSwooshing->play();
     a = new QMessageBox("FELICIDADES", "FELICIDADES RECOJA SU PREMIO",
                                      QMessageBox::NoIcon, QMessageBox::NoButton,
                                      QMessageBox::NoButton, QMessageBox::NoButton, this);
     a->show();
+    active= true;
 
     QTimer::singleShot(5000, this, [=](){
         a->close();
         close();
+        active= false;
     });
 }
 

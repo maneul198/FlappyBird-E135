@@ -26,6 +26,7 @@ private:
     void loadFrame();
     int getHighestScore();
     bool gameOver;
+    bool lostLife;
     bool showReclamarPremio;
     QTimer *timer;
 
@@ -36,6 +37,7 @@ public:
     void logic();
     void setScore(int);
     void setGameOver(bool);
+    void setLostLife(bool);
     void mostrarReclamarPremio(bool);
 
 signals:
