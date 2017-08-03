@@ -38,7 +38,7 @@ uint Product::count() const
     return m_count;
 }
 
-void Product::setCount(uint count)
+void Product::setCount(int count)
 {
     m_count = count;
     emit countChanged();

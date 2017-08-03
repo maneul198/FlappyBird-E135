@@ -20,6 +20,10 @@ ProductsManager::ProductsManager(QObject *parent) :
         });
     });
 
+    timer= new QTimer(this);
+    timer->setInterval(1000);
+    timer->setSingleShot(true);
+
 #endif
 }
 
@@ -234,6 +238,8 @@ void ProductsManager::setBusy(bool busy)
 
 void ProductsManager::sensorChanged(bool value)
 {
+    if(timer->isActive()) return;
+
     //m_busy= true;
     if (value && m_busy) {
         m_delivered = true;
@@ -244,7 +250,9 @@ void ProductsManager::sensorChanged(bool value)
         emit deliveredNumberHook(m_currentHook);
         stopHook();
         m_products.at(m_currentHook)->decreaseCount();
+        qDebug() << m_currentHook << "Producto" << m_products.at(m_currentHook)->name() << endl;
     }
+    timer->start();
 }
 
 

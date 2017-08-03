@@ -582,7 +582,8 @@ void MainWindow::coinIn(int dinero){
         qDebug() << lives << endl;
         livesboard->setScore(lives);
         configurationFile::writeOnFile("/home/" +
-                                       qgetenv("USER") + "/.config/flappyBirdConfig/ingresos", "$" + dinero );
+                                       qgetenv("USER") + "/.config/flappyBirdConfig/ingresos",
+                                       dinero );
 
         readyboard->mostrarIngreseDinero(false);
     }

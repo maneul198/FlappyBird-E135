@@ -23,7 +23,7 @@ public Q_SLOTS:
     void setName(const QString &name);
     void setIcon(const QString &icon);
     void setValue(uint value);
-    void setCount(uint count);
+    void setCount(int count);
     void decreaseCount();
     
 signals:
@@ -36,7 +36,7 @@ private:
     QString m_icon;
     QString m_name {"none"};
     uint m_value {0};
-    uint m_count {0};
+    int m_count {0};
 };
 
 #endif // PRODUCT_H

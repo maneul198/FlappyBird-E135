@@ -6,7 +6,8 @@
 
 awardPrize::awardPrize(QWidget *parent):
     QMainWindow(parent),
-    setting("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/productos.ini", QSettings::IniFormat)
+    setting("/home/" + qgetenv("USER") + "/.config/flappyBirdConfig/productos.ini",
+            QSettings::IniFormat)
 {
     active= false;
     manager = new ProductsManager();
@@ -50,12 +51,6 @@ void awardPrize::init(){
 
     for(int i= 0; i < 4; i++){
         QPushButton * button = new QPushButton(this);
-        /*
-        button->setStyleSheet("QPushButton{border-image:url("
-                              + GameElement::url + "image/products/goproCamer.jpg);"
-                                                   "} QPushButton:focus{margin: 2px 2px 2px 2px;}"
-                                                   "QPushButton{margin: 15px 15px 15px 15px}");
-                             */
 
         button->setGeometry(QRect(BUTTON_WIDTH * (i % 2) + HORIZONTAL_BUTTON_SEPARATION * ((i % 2) + 1),
                                   BUTTON_HEIGH * (i / 2)  + VERTICAL_BUTTON_SEPARATION * ((i / 2)),
@@ -77,13 +72,6 @@ void awardPrize::init(){
 
     for(int i= 0; i < 6; i++){
         QPushButton * button = new QPushButton(this);
-        /*
-        button->setStyleSheet("QPushButton{border-image:url("
-                              + GameElement::url + "image/products/goproCamer.jpg);"
-                                                   "} QPushButton:focus{margin: 2px 2px 2px 2px;}"
-                                                   "QPushButton{margin: 15px 15px 15px 15px}");
-                                                   */
-
 
         button->setGeometry(QRect(BUTTON_WIDTH * (i % 3) + HORIZONTAL_BUTTON_SEPARATION * ((i % 3) + 1),
                                   BUTTON_HEIGH * ( 3 + i / 3)  + VERTICAL_BUTTON_SEPARATION * ((i / 3)),
@@ -96,50 +84,22 @@ void awardPrize::init(){
 
         connect(button, &QPushButton::pressed, this, [=](){
             manager->turnHook(orden[4 + i]);
-            //close();
             //emit selectedPrize();
         });
-
     }
 
     for(int i= 0; i < 10; i++){
         std::ostringstream oss;
-        oss << "Producto" << orden[i] + 1 << ".nombre";
+        oss << "Producto" << orden[i] << ".nombre";
         QString image= setting.value(oss.str().c_str()).toString();
         qDebug() << "SEBASTIAN!!" << image << endl;
         oss.str("");
-        buttonList.at(orden[i])->setStyleSheet("QPushButton{border-image:url("
+        buttonList.at(i)->setStyleSheet("QPushButton{border-image:url("
                                                + GameElement::url + "image/products/" + image + ");" +
                                                "} QPushButton:focus{margin: 2px 2px 2px 2px;}"
                                                "QPushButton{margin: 15px 15px 15px 15px}");
     }
 }
-
-/*
-void awardPrize::resizeEvent(QResizeEvent *){
-    setStyleSheet("background-image: url(" + GameElement::url + "/image/bg_day.png)");
-
-    double a= buttonList.at(0)->size().height();
-
-    for(int i= 0; i < 4; i++){
-        QPushButton * button = buttonList.at(i);
-s
-        button->setGeometry(QRect(button->size().width() * (i % 2) + ((width() - button->size().width() * 2) / 3) * ((i % 2) + 1),
-                                  button->size().height() * (i / 2)  + (button->size().height() / 2 ) * ((i / 2)),
-                                  button->size().width(), button->size().height()));
-    }
-
-
-    for(int i= 0; i < 6; i++){
-        QPushButton * button = buttonList.at(i + 4);
-
-
-        button->setGeometry(QRect(button->size().width() * (i % 3) + ((width() - button->size().width() * 3) / 4) * ((i % 3) + 1),
-                                  button->size().height() * ( 3 + i / 3)  + ( a * 1 ) * ((i / 3) + 1),
-                                  button->size().width(), button->size().height()));
-    }
-}
-*/
 
 void awardPrize::resizeEvent(QResizeEvent *){
     setStyleSheet("background-image: url(" + GameElement::url + "/image/fondo_productos.png)");
@@ -225,7 +185,7 @@ void awardPrize::displayInfo()
 }
 
 void awardPrize::loadProducs(){
-    for(int i=1; i <= 10; i++){
+    for(int i=0; i < 10; i++){
         //Product p(this);
         Product *p = new Product(this);
         connect(p, &Product::countChanged, this, [=](){

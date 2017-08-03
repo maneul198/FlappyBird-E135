@@ -8,7 +8,7 @@ if [ "$1" = "clear" ];then
 	systemctl disable powerOff-E135.service
 	rm /usr/local/bin/cambiarPropietarioPines.sh
 	rm /usr/local/bin/smart-vending-flappy-bird
-	rm /usr/local/bin/powerOff-E135.service
+	rm /usr/local/bin/powerOff-E135
 	rm /etc/systemd/system/cambiarPropietarioPines.service
 	rm /etc/systemd/system/powerOff-E135.service
 	

@@ -106,6 +106,8 @@ private:
     
     bool m_enableLights {false};
     bool m_delivered {false};
+    int orden[10]= {0, 8, 1, 9, 2, 3, 4, 5, 6, 7};
+    QTimer *timer;
     
     QList<Product *> m_products;
     Product m_none;
