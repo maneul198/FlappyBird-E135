@@ -10,13 +10,13 @@ awardPrize::awardPrize(QWidget *parent):
             QSettings::IniFormat)
 {
     active= false;
-    manager = new ProductsManager();
+    manager = new ProductsManager(this);
     loadProducs();
     connect(manager, SIGNAL(delivered(Product*)), this, SLOT(displayInfo()));
 
     //connect(manager, SIGNAL(timeout()), this, [=](){});
     connect(manager, &ProductsManager::deliveredNumberHook,this, [=](uint producto){
-        qDebug() << "HOOK #: " << producto << ";Nombre" << manager->product(producto) << endl;
+        qDebug() << "HOOK #: " << producto << "; Nombre" << manager->product(producto) << endl;
         std::ostringstream oss;
         oss << "HOOK #: " << producto << ";Nombre: " << manager->product(producto)->name().toStdString() << endl;
         //oss << producto;
@@ -92,7 +92,6 @@ void awardPrize::init(){
         std::ostringstream oss;
         oss << "Producto" << orden[i] << ".nombre";
         QString image= setting.value(oss.str().c_str()).toString();
-        qDebug() << "SEBASTIAN!!" << image << endl;
         oss.str("");
         buttonList.at(i)->setStyleSheet("QPushButton{border-image:url("
                                                + GameElement::url + "image/products/" + image + ");" +
@@ -201,7 +200,6 @@ void awardPrize::loadProducs(){
         oss << "Producto" << i << ".existencias";
         p->setCount(setting.value(oss.str().c_str()).toInt());
         manager->addProduct(p);
-        qDebug() << p->name() << p->count() << endl;
     }
 
 }

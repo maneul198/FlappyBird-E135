@@ -86,13 +86,6 @@ Product *ProductsManager::product(int index)
     return m_products.at(index);
 }
 
-void ProductsManager::classBegin()
-{
-}
-
-void ProductsManager::componentComplete()
-{
-}
 
 int ProductsManager::sensor() const
 {
@@ -156,7 +149,7 @@ int ProductsManager::countHooks() const
 
 void ProductsManager::turnHook(uint hook)
 {
-    if (hook >= m_products.count() && hook > 100) {
+    if (hook >= m_products.count() && false) {
         qWarning() << "hook:" << hook << "out of range";
         return;
     }
@@ -202,8 +195,10 @@ void ProductsManager::turnHook()
             --m_turnOnCounter;
 
             //m_enableLights= false;
+            /*
             if (m_enableLights)
                 m_engineHook->turnOnLight(EngineSV::li.at(m_currentHook));
+                */
 
             try {
                 m_engineHook->turnOnEngine(EngineSV::eng.at(m_currentHook), m_spinTime);

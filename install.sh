@@ -4,13 +4,19 @@ if [ "$1" = "clear" ];then
 	rm $HOME/.config/autostart/flappyBird.desktop
 	rm $HOME/.config/autostart/rotarPantalla.desktop
 	rm -r $HOME/.config/flappyBirdConfig
+
 	systemctl disable cambiarPropietarioPines.service
 	systemctl disable powerOff-E135.service
+	systemctl disable send_email.service
+
 	rm /usr/local/bin/cambiarPropietarioPines.sh
 	rm /usr/local/bin/smart-vending-flappy-bird
 	rm /usr/local/bin/powerOff-E135
+	rm /usr/local/bin/send_email.sh
+
 	rm /etc/systemd/system/cambiarPropietarioPines.service
 	rm /etc/systemd/system/powerOff-E135.service
+	rm /etc/systemd/system/send_email.service
 	
 
 	if [ "$2" = "--all" ];then
@@ -104,9 +110,19 @@ if [ ! -f /usr/local/bin/cambiarPropietarioPines.sh ];then
 	chown $usuario /usr/local/bin/cambiarPropietarioPines.sh
 fi
 
+if [ ! -f /usr/local/bin/send_email.sh ];then
+	cp ./send_email.sh /usr/local/bin/
+	chown $usuario /usr/local/bin/send_email.sh
+fi
+
 if [ ! -f /etc/systemd/system/cambiarPropietarioPines.service ];then
        cp ./cambiarPropietarioPines.service /etc/systemd/system/
        chown $usuario /etc/systemd/system/cambiarPropietarioPines.service
+fi       
+
+if [ ! -f /etc/systemd/system/send_email.service ];then
+       cp ./send_email.service /etc/systemd/system/
+       chown $usuario /etc/systemd/system/send_email.service
 fi       
 
 if [ ! -f /etc/systemd/system/powerOff-E135.service ];then
@@ -117,3 +133,4 @@ fi
 
 systemctl enable cambiarPropietarioPines.service
 systemctl enable powerOff-E135.service
+systemctl enable send_email.service

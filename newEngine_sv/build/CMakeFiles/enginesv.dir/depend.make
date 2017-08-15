@@ -6,6 +6,7 @@ CMakeFiles/enginesv.dir/enginesv_automoc.cpp.o: enginesv_automoc.cpp
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: ../enginesv.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: ../enginesv.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: ../enginesv_dpx.cpp
+CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
@@ -25,6 +26,7 @@ CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
+CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
 CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h

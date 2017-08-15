@@ -77,8 +77,14 @@ dpci_api_types.h
 -
 dpci_api_decl.h
 -
+QDateTime
+-
 moc_enginesv.cpp
 /home/smart/paqueteFlappyBird/newEngine_sv/moc_enginesv.cpp
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+qdatetime.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 qdebug.h
@@ -196,6 +202,16 @@ QtCore/qnamespace.h
 QtCore/qbytearray.h
 -
 QtCore/qobjectdefs.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
+QtCore/qstring.h
+-
+QtCore/qnamespace.h
+-
+QtCore/qshareddata.h
+-
+limits
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h

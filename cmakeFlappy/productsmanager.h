@@ -21,17 +21,8 @@
 #include "product.h"
 #include <enginesv.h>
 
-class ProductsManager : public QObject, public QQmlParserStatus {
+class ProductsManager : public QObject {
     Q_OBJECT
-    Q_INTERFACES(QQmlParserStatus)
-    Q_PROPERTY(QQmlListProperty<Product> products READ products NOTIFY productsChanged)
-    Q_PROPERTY(int  sensor   READ sensor   WRITE setSensor)
-    Q_PROPERTY(bool busy     READ busy     NOTIFY busyChanged)
-    Q_PROPERTY(bool enabledLights READ enabledLights WRITE setEnabledLights NOTIFY enabledLightsChanged)
-    Q_PROPERTY(int  hooks    READ countHooks)
-    Q_PROPERTY(int  spinTime READ spinTime WRITE setSpinTime NOTIFY spinTimeChanged)
-    Q_PROPERTY(int  selected READ selected NOTIFY selectedChanged)
-    
 public:
     ProductsManager(QObject *parent = 0);
     ProductsManager(DPX::Line, QObject *parent= 0);
@@ -51,8 +42,6 @@ public:
     
     Product *product(int index);
     
-    void classBegin() override;
-    void componentComplete() override;
     
     int sensor() const;
     void setSensor(int inputpin);

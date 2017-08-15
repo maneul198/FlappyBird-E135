@@ -55,8 +55,6 @@ void configurationFile::writeOnFile(QString name, QVariant value){
         return;
     }
 
-    qDebug() << "El valor de HOOK es: " << value.toString() << endl;
-
     QTextStream out(&file);
     out << QDateTime::currentDateTime().toString(Qt::ISODate) << ": "<< value.toString() << "\n";
     file.close();

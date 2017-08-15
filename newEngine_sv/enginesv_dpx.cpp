@@ -2,6 +2,7 @@
 #include <dpci_core_api.h>
 #include <dpci_api_types.h>
 #include <dpci_api_decl.h>
+#include <QDateTime>
 
 EngineSV::EngineSV(const string &i2cFileName, QObject *parent)
     : QObject(parent), i2cFileName(i2cFileName)
@@ -26,7 +27,16 @@ int EngineSV::bus() const
 
 void EngineSV::turnOnEngine(const array<uchar, 3> &eng1, int time_spin)
 {
-    int retVal = dpci_i2c_write8(m_bus, eng1.at(MCP_ADDR) , eng1.at(REG_ADDR), eng1.at(DATA));
+    dpci_i2c_write8(0x0, 0x40, 0x0, 0x0);
+    dpci_i2c_write8(0x0, 0x40, 0x1, 0x0);
+    qDebug() << "TUNONENGINE: " << endl;
+    qDebug() << "m_bus: " << m_bus << endl <<  "MCP_ADDR: " << eng1.at(MCP_ADDR) << "\n"
+             << "time_spin: " << time_spin << "\n" << "REG_ADDR"  << eng1.at(REG_ADDR) << "\n"
+             << "DATA" << eng1.at(DATA) << "" <<  endl;
+
+    int retVal= 0;
+    qDebug() << QDateTime::currentDateTime().toString(Qt::ISODate) << endl;
+     retVal = dpci_i2c_write8(m_bus, eng1.at(MCP_ADDR) , eng1.at(REG_ADDR), eng1.at(DATA));
 
     if (retVal < 0)
         throw std::runtime_error(errorMessage());
@@ -37,8 +47,9 @@ void EngineSV::turnOnEngine(const array<uchar, 3> &eng1, int time_spin)
     if(time_spin > 0){
         QTimer::singleShot(time_spin, [ &, eng1]() {
             qDebug() << "se apaga el hook" << endl;
+            qDebug() << QDateTime::currentDateTime().toString(Qt::ISODate) << endl;
             turnOffEngine(eng1);
-            emit engineStoped();
+            //emit engineStoped();
     });
     }
 

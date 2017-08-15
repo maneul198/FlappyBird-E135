@@ -7,6 +7,7 @@ CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o
  ../enginesv.h
  /home/smart/paqueteFlappyBird/newEngine_sv/enginesv.h
  /home/smart/paqueteFlappyBird/newEngine_sv/enginesv_dpx.cpp
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
@@ -26,6 +27,7 @@ CMakeFiles/enginesv.dir/enginesv_dpx.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h

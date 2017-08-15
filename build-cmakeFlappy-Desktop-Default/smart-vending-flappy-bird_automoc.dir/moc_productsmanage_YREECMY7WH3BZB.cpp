@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_ProductsManager_t {
-    QByteArrayData data[27];
-    char stringdata0[303];
+    QByteArrayData data[19];
+    char stringdata0[218];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -47,15 +47,7 @@ QT_MOC_LITERAL(14, 156, 11), // "busyChanged"
 QT_MOC_LITERAL(15, 168, 15), // "spinTimeChanged"
 QT_MOC_LITERAL(16, 184, 8), // "turnHook"
 QT_MOC_LITERAL(17, 193, 10), // "selectHook"
-QT_MOC_LITERAL(18, 204, 13), // "unselectHooks"
-QT_MOC_LITERAL(19, 218, 8), // "products"
-QT_MOC_LITERAL(20, 227, 25), // "QQmlListProperty<Product>"
-QT_MOC_LITERAL(21, 253, 6), // "sensor"
-QT_MOC_LITERAL(22, 260, 4), // "busy"
-QT_MOC_LITERAL(23, 265, 13), // "enabledLights"
-QT_MOC_LITERAL(24, 279, 5), // "hooks"
-QT_MOC_LITERAL(25, 285, 8), // "spinTime"
-QT_MOC_LITERAL(26, 294, 8) // "selected"
+QT_MOC_LITERAL(18, 204, 13) // "unselectHooks"
 
     },
     "ProductsManager\0delivered\0\0Product*\0"
@@ -63,10 +55,7 @@ QT_MOC_LITERAL(26, 294, 8) // "selected"
     "started\0timeout\0noProduct\0stopped\0"
     "productsChanged\0enabledLightsChanged\0"
     "selectedChanged\0busyChanged\0spinTimeChanged\0"
-    "turnHook\0selectHook\0unselectHooks\0"
-    "products\0QQmlListProperty<Product>\0"
-    "sensor\0busy\0enabledLights\0hooks\0"
-    "spinTime\0selected"
+    "turnHook\0selectHook\0unselectHooks"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,7 +66,7 @@ static const uint qt_meta_data_ProductsManager[] = {
        0,       // classname
        0,    0, // classinfo
       14,   14, // methods
-       7,  108, // properties
+       0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -118,24 +107,6 @@ static const uint qt_meta_data_ProductsManager[] = {
     QMetaType::Void, QMetaType::UInt,    6,
     QMetaType::Void, QMetaType::UInt,    6,
     QMetaType::Void,
-
- // properties: name, type, flags
-      19, 0x80000000 | 20, 0x00495009,
-      21, QMetaType::Int, 0x00095103,
-      22, QMetaType::Bool, 0x00495001,
-      23, QMetaType::Bool, 0x00495103,
-      24, QMetaType::Int, 0x00095001,
-      25, QMetaType::Int, 0x00495103,
-      26, QMetaType::Int, 0x00495001,
-
- // properties: notify_signal_id
-       6,
-       0,
-       9,
-       7,
-       0,
-      10,
-       8,
 
        0        // eod
 };
@@ -254,34 +225,6 @@ void ProductsManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             }
         }
     }
-#ifndef QT_NO_PROPERTIES
-    else if (_c == QMetaObject::ReadProperty) {
-        ProductsManager *_t = static_cast<ProductsManager *>(_o);
-        Q_UNUSED(_t)
-        void *_v = _a[0];
-        switch (_id) {
-        case 0: *reinterpret_cast< QQmlListProperty<Product>*>(_v) = _t->products(); break;
-        case 1: *reinterpret_cast< int*>(_v) = _t->sensor(); break;
-        case 2: *reinterpret_cast< bool*>(_v) = _t->busy(); break;
-        case 3: *reinterpret_cast< bool*>(_v) = _t->enabledLights(); break;
-        case 4: *reinterpret_cast< int*>(_v) = _t->countHooks(); break;
-        case 5: *reinterpret_cast< int*>(_v) = _t->spinTime(); break;
-        case 6: *reinterpret_cast< int*>(_v) = _t->selected(); break;
-        default: break;
-        }
-    } else if (_c == QMetaObject::WriteProperty) {
-        ProductsManager *_t = static_cast<ProductsManager *>(_o);
-        Q_UNUSED(_t)
-        void *_v = _a[0];
-        switch (_id) {
-        case 1: _t->setSensor(*reinterpret_cast< int*>(_v)); break;
-        case 3: _t->setEnabledLights(*reinterpret_cast< bool*>(_v)); break;
-        case 5: _t->setSpinTime(*reinterpret_cast< int*>(_v)); break;
-        default: break;
-        }
-    } else if (_c == QMetaObject::ResetProperty) {
-    }
-#endif // QT_NO_PROPERTIES
 }
 
 const QMetaObject ProductsManager::staticMetaObject = {
@@ -300,10 +243,6 @@ void *ProductsManager::qt_metacast(const char *_clname)
     if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_ProductsManager.stringdata0))
         return static_cast<void*>(const_cast< ProductsManager*>(this));
-    if (!strcmp(_clname, "QQmlParserStatus"))
-        return static_cast< QQmlParserStatus*>(const_cast< ProductsManager*>(this));
-    if (!strcmp(_clname, "org.qt-project.Qt.QQmlParserStatus"))
-        return static_cast< QQmlParserStatus*>(const_cast< ProductsManager*>(this));
     return QObject::qt_metacast(_clname);
 }
 
@@ -321,23 +260,6 @@ int ProductsManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 14;
     }
-#ifndef QT_NO_PROPERTIES
-   else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
-            || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
-        qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
-    } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 7;
-    } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 7;
-    } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 7;
-    } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 7;
-    } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 7;
-    }
-#endif // QT_NO_PROPERTIES
     return _id;
 }
 
